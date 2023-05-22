@@ -1,0 +1,60 @@
+.output {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+    border-radius: 1.5rem;
+    background-color: $secondary;
+
+    @include for-lapto-up {
+        width: 50%;
+        // justify-content: space-between;
+    }
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-label {
+    color: $white;
+}
+
+.result-person {
+    font-size: 0.8rem;
+    color: $grayishCyan;
+}
+
+.outputText {
+    font-size: 2rem;
+    color: $accent;
+
+    @include for-lapto-up {
+        font-size: 3rem;
+    }
+}
+
+.resetBtn {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: $accent;
+    color: $secondary;
+    font-family: $spaceMono;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $main;
+    }
+
+    @include for-lapto-up {
+        padding: 0.8rem;
+        margin-top: 16rem;
+    }
+}

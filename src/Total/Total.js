@@ -7,13 +7,13 @@ const Total = () => {
     } = React.useContext(Context);
 
     return (
-        <div>
+        <div className="result-container">
             <div>
-                <p>Total</p>
-                <p>/ person</p>
+                <p className="result-label">Total</p>
+                <p className="result-person">/ person</p>
             </div>
             <div>
-                <h2>{total}</h2>
+                <h2 className="outputText"><span>$</span>{total}</h2>
             </div>
         </div>
     )

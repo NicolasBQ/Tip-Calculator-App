@@ -12,11 +12,13 @@ const Bill = () => {
     }
 
     return (
-        <div>
-            <label>Bill</label>
+        <div className="input-component bill">
+            <label className="label">Bill</label>
             <input type="text" 
                 onChange={billVal}
                 value={bill}
+                className="input bill_input"
+                placeholder="0"
             />
         </div>
     )

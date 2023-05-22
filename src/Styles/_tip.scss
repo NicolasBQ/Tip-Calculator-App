@@ -1,0 +1,56 @@
+.tip {
+    &_grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 47%);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 5%;
+        row-gap: 0.5rem;
+
+        @include for-lapto-up {
+            grid-template-columns: repeat(3, 30%);;
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+
+    &_btn {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        font-family: $spaceMono;
+        border: none;
+        background-color: $secondary;
+        color: $white;
+        border-radius: 0.5rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $main;
+            color: $secondary;
+        }
+
+        &-active {
+            background-color: $accent;
+            color: $secondary;
+        }
+    }
+
+    &_input {
+        background-color: $lightGrayish;
+        padding: 0.8rem;
+        outline: none;
+        border: none;
+        border-radius: 0.5rem;
+        text-align: right;
+        font-size: 1.2rem;
+        font-family: $spaceMono;
+        color: $secondary;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button,
+        &[type=number] {
+            -webkit-appearance: none;
+            margin: 0;
+            -moz-appearance: textfield;
+        }
+    }
+}

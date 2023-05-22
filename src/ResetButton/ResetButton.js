@@ -9,15 +9,18 @@ const ResetButton = () => {
     } = React.useContext(Context);
 
     const resetBtn = () => {
-        setBill(0);
-        setTip(0);
-        setPeople(1);
+        setBill('');
+        setTip('');
+        setPeople('');
     }
 
     return (
         <button
             onClick={resetBtn}
-        >RESET</button>
+            className="resetBtn"
+        >
+            RESET
+        </button>
     )
 }
 

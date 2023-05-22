@@ -6,9 +6,7 @@ import '../Styles/main.scss';
 
 const App = () => {
   return (
-    // <h1>Splitter</h1>
     <Provider>
-      <h1>Splitter</h1>
       <AppUI />
     </Provider>
   );

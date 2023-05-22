@@ -1,0 +1,32 @@
+// FONT
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+$spaceMono: 'Space Mono', monospace;
+
+// COlORS
+$main: hsl(185, 41%, 84%);
+$secondary: hsl(183, 100%, 15%);
+$accent: hsl(172, 67%, 45%);
+$darkGrayishCyan: hsl(186, 14%, 43%);
+$grayishCyan: hsl(184, 14%, 56%);
+$lightGrayish: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+// MEDIA QUERIES
+@mixin for-lapto-up {
+    @media screen and (min-width: 50em) {
+        @content;
+    }
+}
+
+// INITIAL SETTINGS
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+

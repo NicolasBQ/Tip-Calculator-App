@@ -1,0 +1,7 @@
+.bill {
+    height: 100px;
+    &_input {
+        background: url('../Assets/icon-dollar.svg') no-repeat scroll 1rem 1.2rem;
+        background-color: $lightGrayish;
+    }
+}

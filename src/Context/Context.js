@@ -3,9 +3,9 @@ import React from "react";
 const Context = React.createContext();
 
 const Provider = (props) => {
-    const [bill, setBill] = React.useState(0);
+    const [bill, setBill] = React.useState('');
     const [tip, setTip] = React.useState(0);
-    const [people, setPeople] = React.useState(1);
+    const [people, setPeople] = React.useState('');
     const [total, setTotal] = React.useState(0);
     const [tipAmount, setTipAmount] = React.useState(1);
 
@@ -21,13 +21,11 @@ const Provider = (props) => {
                 const total = totalBill / people;
                 setTotal(total.toFixed(2));
                 setTipAmount((tipA / people).toFixed(2));
-            }
+            }      
         }
 
         totalPerPerson();
     }, [bill, tip, people])
-
-
 
 
     return (
@@ -39,7 +37,7 @@ const Provider = (props) => {
                 people,
                 setPeople,
                 total,
-                tipAmount
+                tipAmount,
             }}
         >
             {props.children}

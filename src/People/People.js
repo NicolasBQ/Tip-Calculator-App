@@ -4,23 +4,22 @@ import { Context } from "../Context/Context";
 const People = () => {
     const {
         people,
-        setPeople
+        setPeople,
     } = React.useContext(Context);
 
     const peopleVal = (e) => {
-        if(e.target.value !== 0) {
-            setPeople(e.target.value);
-        } else {
-            setPeople(1);
-        }
+        let value = e.target.value 
+        setPeople(value);
     }
 
     return (
-        <div>
-            <label>Number of People</label>
+        <div className="input-component people">
+            <label className="label">Number of People</label>
             <input type="text"
                 onChange={peopleVal}
                 value={people}
+                className="input people_input"
+                placeholder="0"
             />
         </div>
     )

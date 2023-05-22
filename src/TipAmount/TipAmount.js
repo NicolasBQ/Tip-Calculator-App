@@ -7,13 +7,13 @@ const TipAmount = () => {
     } = React.useContext(Context);
 
     return(
-        <div>
+        <div className="tipAmount">
             <div>
-                <p>Tip Amount</p>
-                <p>/ person</p>
+                <p className="result-label">Tip Amount</p>
+                <p className="result-person">/ person</p>
             </div>
             <div>
-                <h2>{tipAmount}</h2>
+                <h2 className="outputText"><span>$</span>{tipAmount}</h2>
             </div>
         </div>
     )

@@ -1,0 +1,7 @@
+.people {
+    height: 100px;
+    &_input {
+        background: url('../Assets/icon-person.svg') no-repeat scroll 1rem 1.2rem;
+        background-color: $lightGrayish;
+    }
+}

@@ -1,0 +1,14 @@
+.footer {
+    margin-top: 1rem;
+    &_text {
+        color: $secondary;
+    }
+
+    &_link {
+        color: $secondary;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+}

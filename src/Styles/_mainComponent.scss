@@ -1,0 +1,12 @@
+.main {
+    background-color: $white;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 100%;
+
+    @include for-lapto-up {
+        display: flex;
+        width: 70%;
+        gap: 2rem;
+    }
+}

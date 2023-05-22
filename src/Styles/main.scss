@@ -1,0 +1,57 @@
+@import './config';
+@import './mainComponent';
+@import './data';
+@import './output';
+@import './bill';
+@import './people';
+@import './tip';
+@import './tipAmount';
+@import './footer';
+
+body {
+    width: 100%;
+    background-color: $main;
+    font-family: $spaceMono;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    letter-spacing: 0.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $secondary;
+}
+
+.label {
+    color: $darkGrayishCyan;
+}
+
+.input {
+    padding: 0.8rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: right;
+    font-size: 1.2rem;
+    font-family: $spaceMono;
+    color: $secondary;
+
+    &:focus {
+        border: 2px solid $accent;
+    }
+}
+
+.input-component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+

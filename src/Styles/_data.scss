@@ -1,0 +1,11 @@
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    @include for-lapto-up {
+        width: 50%;
+        gap: 4rem;
+    }
+}
