@@ -11,21 +11,24 @@ const Provider = (props) => {
 
 
     React.useEffect(() => {
+        const totalPerPerson = () => {
+            if(!bill || !people) {
+                setTotal(0);
+                setTipAmount(0)
+            } else {
+                const tipA = bill * tip;
+                const totalBill = parseFloat(bill) + parseFloat(tipA);
+                const total = totalBill / people;
+                setTotal(total.toFixed(2));
+                setTipAmount((tipA / people).toFixed(2));
+            }
+        }
+
         totalPerPerson();
     }, [bill, tip, people])
 
-    const totalPerPerson = () => {
-        if(bill == 0 || people == 0) {
-            setTotal(0);
-            setTipAmount(0)
-        } else {
-            const tipA = bill * tip;
-            const totalBill = parseFloat(bill) + parseFloat(tipA);
-            const total = totalBill / people;
-            setTotal(total.toFixed(2));
-            setTipAmount((tipA / people).toFixed(2));
-        }
-    }
+
+
 
     return (
         <Context.Provider
