@@ -1,6 +1,11 @@
 import React from "react";
+import { Context } from "../Context/Context";
 
 const TipAmount = () => {
+    const {
+        tipAmount
+    } = React.useContext(Context);
+
     return(
         <div>
             <div>
@@ -8,7 +13,7 @@ const TipAmount = () => {
                 <p>/ person</p>
             </div>
             <div>
-                <h2>$4.27</h2>
+                <h2>{tipAmount}</h2>
             </div>
         </div>
     )

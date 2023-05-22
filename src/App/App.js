@@ -1,4 +1,5 @@
 import React from 'react';
+import { Provider } from '../Context/Context';
 import { AppUI } from './AppUI';
 import '../Styles/main.scss';
 
@@ -6,10 +7,10 @@ import '../Styles/main.scss';
 const App = () => {
   return (
     // <h1>Splitter</h1>
-    <React.Fragment>
+    <Provider>
       <h1>Splitter</h1>
       <AppUI />
-    </React.Fragment>
+    </Provider>
   );
 }
 
