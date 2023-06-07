@@ -2,19 +2,13 @@ import React from "react";
 import { Context } from "../Context/Context";
 
 
-const BUTTONS = [
-    { id: 0, title: "5%", val: 0.05, selected: false },
-    { id: 1, title: "10%", val: 0.10, selected: false },
-    { id: 2, title: "15%", val: 0.15, selected: false },
-    { id: 3, title: "25%", val: 0.25, selected: false },
-    { id: 4, title: "50%", val: 0.50, selected: false }
-]
-
 const Tip = () => {
-    const [buttons, setButtons] = React.useState(BUTTONS);
+    
 
     const {
         setTip,
+        buttons,
+        setButtons
     } = React.useContext(Context);
 
     const tipValBtn = (id, val) => {  

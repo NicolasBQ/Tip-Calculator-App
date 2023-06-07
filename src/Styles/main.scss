@@ -46,6 +46,22 @@ body {
     &:focus {
         border: 2px solid $accent;
     }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button,
+    &[type=number] {
+        -webkit-appearance: none;
+        margin: 0;
+        -moz-appearance: textfield;
+    }
+}
+
+.error {
+    border: 2px solid red;
+
+    &:focus {
+        border: 2px solid red;
+    }
 }
 
 .input-component {

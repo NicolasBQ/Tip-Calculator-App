@@ -5,20 +5,21 @@ const People = () => {
     const {
         people,
         setPeople,
+        inputError
     } = React.useContext(Context);
 
     const peopleVal = (e) => {
-        let value = e.target.value 
+        const value = e.target.value;
         setPeople(value);
     }
 
     return (
         <div className="input-component people">
             <label className="label">Number of People</label>
-            <input type="text"
+            <input type="number"
                 onChange={peopleVal}
                 value={people}
-                className="input people_input"
+                className={!inputError ? 'input people_input' : 'input people_input error'}
                 placeholder="0"
             />
         </div>

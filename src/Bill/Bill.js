@@ -14,7 +14,7 @@ const Bill = () => {
     return (
         <div className="input-component bill">
             <label className="label">Bill</label>
-            <input type="text" 
+            <input type="number" 
                 onChange={billVal}
                 value={bill}
                 className="input bill_input"

@@ -5,14 +5,21 @@ const ResetButton = () => {
     const {
         setBill,
         setTip,
-        setPeople
+        setPeople,
+        resetBtns,
+        setTipAmount,
+        setTotal
     } = React.useContext(Context);
 
     const resetBtn = () => {
         setBill('');
         setTip('');
         setPeople('');
+        resetBtns();
+        setTipAmount(0);
+        setTotal(0);
     }
+
 
     return (
         <button
