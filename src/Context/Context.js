@@ -23,7 +23,7 @@ const Provider = (props) => {
     React.useEffect(() => {
         const totalPerPerson = () => {
             setInputError(false);
-            if(!bill) {
+            if(!bill || !people) {
                 setTotal(0);
                 setTipAmount(0)
             } else {
